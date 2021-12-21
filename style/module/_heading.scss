@@ -1,0 +1,122 @@
+.heading{
+    height: 90vh;
+    background-color: #F1E4E6;
+
+    &_i{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: 100%;
+        
+        background: url(../img/muzhik_v_palto.png
+        ) no-repeat -215px center ;
+        background-size: contain;
+        transition: 2s;
+
+        &:hover{
+            transform:skewX(180deg);
+        }
+
+
+        & h1{
+            border-left: 12px solid $rose_color;
+            padding-left: 16px;
+            max-width:  430px;
+            min-height: 93px;
+            color: #222222;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 38.4px;
+            text-transform: uppercase;
+            transition: 2s;
+
+            &:hover{
+                transform: scale(1.1);
+                max-width: 400px;
+
+                & span{
+                    font-size: 80px;
+                    line-height: 70px;
+                }
+            }
+
+            &__b{
+                font-weight: 900;
+                font-size: 48px;
+                line-height: 58px;
+            }
+            
+            &__f{
+                color: $rose_color;
+            }
+        }
+    }
+}
+
+@media (max-width:768px) and (min-width:376px){
+
+    .heading{
+        height: 50vh;
+
+        &_i{
+            background-position-x: -120px ;
+
+            & h1{
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 28.8px;
+
+
+                &__b{
+                    font-weight: 900;
+                    font-size: 44px;
+                    line-height: 52.8px;
+                }
+                
+                &__f{
+                    font-weight: 700;
+                    font-size: 37px;
+                    line-height: 44.8px;
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width:375px){
+
+    
+    .heading{
+        height: 45vh;
+
+        &_i{
+
+            background: none;
+
+            
+            &__title{
+                min-height: 50px;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 24px;
+
+
+                &__b{
+                    font-weight: 900;
+                    font-size: 38px;
+                    line-height: 45.6px;
+                }
+                
+                &__f{
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+
+
+
+}
